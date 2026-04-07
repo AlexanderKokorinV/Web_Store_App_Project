@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Контакты</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        .fixed-bottom-left {
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+            z-index: 1050;
+        }
+        .main-content {
+            margin-left: 150px;
+            padding: 60px 40px;
+        }
+        .form-container {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+        }
+    </style>
+</head>
+<body class="bg-light">
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Левая колонка -->
+        <div class="col-2"></div>
+
+        <!-- Центральная колонка с контентом -->
+        <div class="col-8 main-content">
+
+            <!-- ОСНОВНОЙ КОНТЕНТ -->
+            <div class="main-content">
+                <div class="container">
+                    <h1 class="text-center mb-5 fw-normal" style="font-size: 3rem;">Контакты</h1>
+
+                    <div class="row g-5">
+                        <!-- Левая колонка: Форма -->
+                        <div class="col-md-5">
+                            <div class="form-container bg-white">
+                                <form>
+                                    <div class="mb-3">
+                                        <label class="form-label text-muted">Имя</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label text-muted">Почта</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">@</span>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label text-muted">Сообщение</label>
+                                        <textarea class="form-control" rows="4"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary px-4">Отправить</button>
+                                </form>
+                            </div>
+                        </div>
+
+                <!-- Правая колонка: Текст -->
+                <div class="col-md-7">
+                    <h3 class="fw-bold mb-3">Наши контакты</h3>
+                    <p class="text-muted lh-lg">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                    <p class="text-muted lh-lg">
+                        While many Bootstrap styles cannot be styled with CSS, you can use our CSS variables to customize the feedback form.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- Кнопка для вызова меню -->
+            <div class="offcanvas offcanvas-start show text-bg-dark" tabindex="-1" id="offcanvasDark" aria-labelledby="offcanvasDarkLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkLabel">Меню</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+            <div class="offcanvas-body">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Категории</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Заказы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled text-white" aria-disabled="true">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+            <!-- Кнопка в левом нижнем углу -->
+            <div class="dropup-center dropup fixed-bottom-left">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Пользователь
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Профиль</a></li>
+                    <li><a class="dropdown-item" href="#">Выход</a></li>
+                </ul>
+            </div>
+
+        </div> <!-- Закрываем col-8 -->
+        <div class="col-2"></div>
+</div> <!-- Закрываем row -->
+</div> <!-- Закрываем container-fluid -->
+
+</body>
+</html>
