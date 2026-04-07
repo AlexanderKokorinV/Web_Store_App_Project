@@ -8,7 +8,7 @@
  - Главная (home.html)
  - Каталог (catalogue.html)
  - Категория 1 (category.html)
- - Контакты (contacts)
+ - Контакты (contacts.html)
 
 Соответствующие HTML-документы расположены в папке html_files в корне проекта.
 
