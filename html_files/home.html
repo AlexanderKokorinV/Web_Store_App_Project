@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Каталог</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <title>Главная</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
     <style>
         .fixed-bottom-left {
             position: fixed;
@@ -12,18 +12,10 @@
             bottom: 20px;
             z-index: 1050;
         }
+        .card { border-radius: 10px; }
         .main-content {
             margin-left: 400px;
             transition: margin-left 0.3s ease;
-        .card-img-top {
-            background-color: #6c757d;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 225px;
-            font-size: 1.5rem;
-        }
     </style>
 </head>
 <body class="bg-light">
@@ -38,40 +30,63 @@
 
             <!-- Заголовок страницы -->
             <div class="text-center my-5">
-                <h1 class="display-4 fw-bold">Каталог</h1>
+                <h1 class="display-4 fw-bold">Главная</h1>
+                <p class="lead text-muted">Вы находитесь на сайте, предназначенном для продажи товаров.</p>
             </div>
 
-            <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
+            <!-- Сетка с карточками товаров -->
+            <div class="row row-cols-1 row-cols-md-3 g-4">
                 <!-- Карточка 1 -->
-                <div class="col" style="max-width: 500px;">
-                    <div class="card shadow-sm">
-                        <div class="card-img-top">Thumbnail</div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm text-center">
+                        <div class="card-header py-3 bg-white">
+                            <h4 class="my-0 fw-normal">Товар 1</h4>
+                        </div>
                         <div class="card-body">
-                            <p class="card-text text-muted">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
+                            <h1 class="card-title pricing-card-title">$ 100</h1>
+                            <ul class="list-unstyled mt-3 mb-4 text-muted" style="font-size: 0.9rem;">
+                                <li>10 users included</li>
+                                <li>2 GB of storage</li>
+                                <li>Email support</li>
+                                <li>Help center access</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Карточка 2 -->
-                <div class="col" style="max-width: 500px;">
-                    <div class="card shadow-sm">
-                        <div class="card-img-top">Thumbnail</div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm text-center">
+                        <div class="card-header py-3 bg-white">
+                            <h4 class="my-0 fw-normal">Товар 1</h4>
+                        </div>
                         <div class="card-body">
-                            <p class="card-text text-muted">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                            </div>
+                            <h1 class="card-title pricing-card-title">$ 100</h1>
+                            <ul class="list-unstyled mt-3 mb-4 text-muted">
+                                <li>10 users included</li>
+                                <li>2 GB of storage</li>
+                                <li>Email support</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm text-center">
+                        <div class="card-header py-3 bg-white">
+                            <h4 class="my-0 fw-normal">Товар 1</h4>
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">$ 100</h1>
+                            <ul class="list-unstyled mt-3 mb-4 text-muted">
+                                <li>10 users included</li>
+                                <li>2 GB of storage</li>
+                                <li>Email support</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
                         </div>
                     </div>
                 </div>
