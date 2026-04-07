@@ -65,6 +65,7 @@ pytest tests/test_web_app.py
 
 4. Для проверки покрытия тестами воспользуйтесь командой:
 ```
+
 pytest --cov=src --cov-report=html
 ```
 ## Лицензия:
